@@ -25,11 +25,11 @@ const FormHook = () => {
     setTimeout(() => {
       const info = {
         // JSON que manda el backend
-        nombre: 'César',
-        apellido: 'Guerra',
-        edad: 37,
-        genero: 'M',
-        email: 'cesar@devf.mx',
+        nombre: 'Elisa',
+        apellido: 'Carballo',
+        edad: 42,
+        genero: 'F',
+        email: 'elisa.carballo79@gmail.mx',
         password: 'passwordmuyseguro'
       }
       setDatos(info)
