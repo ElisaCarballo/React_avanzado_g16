@@ -1,12 +1,13 @@
 import './App.css'
-import RefDom from './assets/components/refDom'
+import FormHook from './components/FormHook'
+import RefDom from './components/RefDom'
+import SimpleForm from './components/SimpleForm'
 
-function App() {
-
+function App () {
   return (
     <div className='App'>
-      <RefDom/>
-      
+      <FormHook />
+    </div>
   )
 }
 
