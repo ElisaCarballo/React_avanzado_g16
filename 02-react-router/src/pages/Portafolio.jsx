@@ -1,17 +1,22 @@
+import { Link, Outlet } from 'react-router-dom'
+
 const Portafolio = () => {
   return (
-    <h1>Portafolio</h1>
-    <ul>
+    <>
+      <h1>Portafolio</h1>
+      <ul>
         <li>
-            <Link to='/Cajero'>Cajero</Link>
+          <Link to='/Cajero'>Cajero</Link>
         </li>
         <li>
-            <Link to='/Pinterest'>Pinterest</Link>
+          <Link to='/Pinterest'>Pinterest</Link>
         </li>
         <li>
-            <Link to='/Pokedex'>Pokedex</Link>
+          <Link to='/Pokedex'>Pokedex</Link>
         </li>
-    </ul>
+      </ul>
+      <Outlet />
+    </>
   )
 }
 export default Portafolio
