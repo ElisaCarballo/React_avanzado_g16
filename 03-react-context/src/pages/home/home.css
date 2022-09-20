@@ -1,18 +1,18 @@
-/* .home-container {
+.home-container {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    min-height: 100vh;
+    min-height:100vh;
     color: #d8d8d8;
     text-align: center;
-}
-
-.izquierdo {
+  }
+  
+  .izquierdo {
     background-color: #333333;
     width: 50%;
-}
-
-.derecho {
+  }
+  
+  .derecho {
     background-color: #444444;
     width: 50%;
-} */
+  }
