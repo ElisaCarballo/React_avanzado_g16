@@ -1,7 +1,6 @@
-import '/home.css'
-import PropTypes from 'prop-types'
+import './Home.css'
 
-const home = props => {
+const Home = props => {
   return (
     <div className='home-container'>
       <div className='izquierdo'>
@@ -14,6 +13,4 @@ const home = props => {
   )
 }
 
-home.propTypes = {}
-
-export default home
+export default Home
