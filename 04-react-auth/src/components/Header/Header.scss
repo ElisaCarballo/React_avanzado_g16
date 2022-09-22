@@ -5,8 +5,10 @@ $darkgray: #3d3d3d;
     text-decoration: none;
     letter-spacing: 2px;
 
-    &if:hover {
-        border-bottom: solid 2px $darkgray;
+    &if $hover {
+        &:hover {
+            border-bottom: solid 2px $darkgray; 
+        }
     }
 }
 
