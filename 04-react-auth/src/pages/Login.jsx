@@ -14,9 +14,9 @@ const Login = () => {
             type='email'
             className='form-control'
             id='floatingInput'
-            name=''
+            name='email'
             value=''
-            onChange={() =>}
+            onChange={() => {}}
             placeholder='name@example.com'
           />
           <label htmlfor='floatingInput'>Email address</label>
@@ -26,9 +26,9 @@ const Login = () => {
             type='password'
             className='form-control'
             id='floatingPassword'
-            name=''
+            name='password'
             value=''
-            onChange={() =>}
+            onChange={() => {}}
             placeholder='Password'
           />
           <label htmlfor='floatingPassword'>Password</label>
