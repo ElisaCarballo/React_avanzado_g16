@@ -1,6 +1,5 @@
 import logo from '@/assets/react.svg'
-import React from 'react'
-import '@/assets/css/form,css'
+import '@/assets/css/form.css'
 
 const Login = () => {
   return (
@@ -19,7 +18,7 @@ const Login = () => {
             onChange={() => {}}
             placeholder='name@example.com'
           />
-          <label htmlfor='floatingInput'>Email address</label>
+          <label htmlFor='floatingInput'>Email address</label>
         </div>
         <div className='form-floating'>
           <input
@@ -31,7 +30,7 @@ const Login = () => {
             onChange={() => {}}
             placeholder='Password'
           />
-          <label htmlfor='floatingPassword'>Password</label>
+          <label htmlFor='floatingPassword'>Password</label>
         </div>
 
         <button className='w-100 btn btn-lg btn-primary' type='submit'>Sign in</button>
@@ -40,5 +39,4 @@ const Login = () => {
     </main>
   )
 }
-
-export default login
+export default Login
