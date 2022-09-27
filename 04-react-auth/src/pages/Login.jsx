@@ -10,11 +10,27 @@ const Login = () => {
         <h1 className='h3 mb-3 fw-normal'>Please sign in</h1>
 
         <div className='form-floating'>
-          <input type='email' className='form-control' id='floatingInput' placeholder='name@example.com' />
+          <input
+            type='email'
+            className='form-control'
+            id='floatingInput'
+            name=''
+            value=''
+            onChange={() =>}
+            placeholder='name@example.com'
+          />
           <label htmlfor='floatingInput'>Email address</label>
         </div>
         <div className='form-floating'>
-          <input type='password' className='form-control' id='floatingPassword' placeholder='Password' />
+          <input
+            type='password'
+            className='form-control'
+            id='floatingPassword'
+            name=''
+            value=''
+            onChange={() =>}
+            placeholder='Password'
+          />
           <label htmlfor='floatingPassword'>Password</label>
         </div>
 
