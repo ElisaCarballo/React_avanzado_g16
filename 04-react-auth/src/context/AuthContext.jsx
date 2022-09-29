@@ -4,43 +4,43 @@ import jwt_decode from 'jwt-decode'
 
 export const AuthContext = createContext()
 
-export funtion AuthProvider (props)
-    const [isAuth, setIsAuth] = useState (false)
-    const [user, setUser] = useState (null)
-    
-    const loginUser = (token) {
-        window.localStorage.setItem('token', token)
-        
-        const decoded = jwt_decode(token)
-        setUser (decoded) 
-        setIsAuth (true) //Estoy autentificado
+export function AuthProvider (props) {
+  const [isAuth, setIsAuth] = useState(false)
+  const [user, setUser] = useState(null)
+
+  const loginUser = (token) => {
+    window.localStorage.setItem('token', token)
+
+    const decoded = jwt_decode(token)
+    setUser(decoded)
+    setIsAuth(true) // Estoy autentificado
+  }
+
+  const logout = () => {
+    window.localStorage.removeItem('token')
+    setIsAuth(false) // Estoy fuera o deslogeado
+    setUser(null)
+  }
+
+  useEffect = (() => {
+    const token = window.localStorage.getItem('token')
+    if (token) {
+      const decoded = jwt_decode(token)
+      setUser(decoded)
+      setIsAuth(true)
     }
+  }, [])
 
-    const logout = () => {
-        window.localStorage.removeItem('token')
-        setIsAuth (false) //Estoy fuera o deslogeado
-        setUser (null)
-    }
+  const values = {
+    isAuth,
+    user,
+    loginUser,
+    logout
+  }
 
-    useEffect = () => {
-        const token = window.localStorage.getItem('token')
-        if (token)
-        const decoded = jwt_decode(token)
-        setUser (decoded) 
-        setIsAuth (true)
-    }
-}, [])
-
-    const values = {
-        isAuth,
-        user,
-        loginUser,
-        logout
-    }
-
-    return (
-        <AuthContext.Provider value = {values}>
-            {props.children}
-            </AuthContext.Provider>
-    )
-
+  return (
+    <AuthContext.Provider value={values}>
+      {props.children}
+    </AuthContext.Provider>
+  )
+}

@@ -1,11 +1,10 @@
 import { useContext } from 'react'
 import logo from '@/assets/react.svg'
 import { useNavigate } from 'react-router-dom'
-import { loginUservice } from '@/services/userServices'
+import { loginUserService } from '@/services/userServices'
 import { AuthContext } from '@/context/authcontext'
 import '@/assets/css/form.css'
 import useForm from '../hooks/useform'
-import { loginUserService } from '../services/userServices'
 
 const Login = () => {
   const { loginUser } = useContext(AuthContext)
