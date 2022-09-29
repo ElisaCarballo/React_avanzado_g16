@@ -1,7 +1,21 @@
 import logo from '@/assets/react.svg'
+import { useNavigate } from 'react-router-dom'
+import { loginUser } from '@/services/userServices'
 import '@/assets/css/form.css'
 
 const Login = () => {
+  const navigate = useNavigate()
+  const sendData = async (data) => {
+    try {
+      const result = await loginUser(data)
+      if (result.status === 200) { //* * checar el codigo si es el correcto al hacer el login*//
+        console.log(result.data.token)
+        navigate('/login')
+      }
+    } catch (error) {
+      console.log('Ocurrio un error en Login: ' + error.message)
+    }
+  }
   return (
     <main className='form-signin w-100 m-auto'>
       <form>
