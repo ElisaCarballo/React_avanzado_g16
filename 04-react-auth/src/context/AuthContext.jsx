@@ -5,24 +5,25 @@ import jwt_decode from 'jwt-decode'
 export const AuthContext = createContext()
 
 export function AuthProvider (props) {
-  const [isAuth, setIsAuth] = useState(false)
-  const [user, setUser] = useState(null)
+  const [isAuth, setIsAuth] = useState(false) // ¿Estoy autenticado?
+  const [user, setUser] = useState(null) // Info del usuario DESCIFRADA
 
   const loginUser = (token) => {
+    // Guardamos el token en el localStorage del navegador
+    // Este dato permance aún si el navegador se cierrra y se vuelve abrir.
     window.localStorage.setItem('token', token)
-
     const decoded = jwt_decode(token)
-    setUser(decoded)
-    setIsAuth(true) // Estoy autentificado
+    setUser(decoded) // Guardo la info del token decodificado en su estado
+    setIsAuth(true) // Estoy autenticado
   }
 
   const logout = () => {
-    window.localStorage.removeItem('token')
-    setIsAuth(false) // Estoy fuera o deslogeado
+    window.localStorage.removeItem('token') // Borramos el token del localStorage
+    setIsAuth(false) // Estoy deslogeado
     setUser(null)
   }
 
-  useEffect = (() => {
+  useEffect(() => {
     const token = window.localStorage.getItem('token')
     if (token) {
       const decoded = jwt_decode(token)

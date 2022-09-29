@@ -1,10 +1,10 @@
 import { useContext } from 'react'
-import logo from '@/assets/react.svg'
+import useForm from '@/hooks/useForm'
 import { useNavigate } from 'react-router-dom'
 import { loginUserService } from '@/services/userServices'
-import { AuthContext } from '@/context/authcontext'
+import { AuthContext } from '@/context/AuthContext'
+import logo from '@/assets/react.svg'
 import '@/assets/css/form.css'
-import useForm from '../hooks/useform'
 
 const Login = () => {
   const { loginUser } = useContext(AuthContext)
@@ -12,15 +12,16 @@ const Login = () => {
   const sendData = async (data) => {
     try {
       const result = await loginUserService(data)
-      if (result.status === 200) { //* * checar el codigo si es el correcto al hacer el login*//
-        //* *console.log(result.data.token)**//
-        window.localStorage.setItem('token', result.data.token)
-        navigate('/login')
+      if (result.status === 200) {
+        loginUser(result.data.token)
+        // console.log(result.data.token)
+        navigate('/')
       }
     } catch (error) {
       console.log('Ocurrio un error en Login: ' + error.message)
     }
   }
+
   const { input, handleInputChange, handleSubmit } = useForm(sendData, {
     email: '',
     password: ''
