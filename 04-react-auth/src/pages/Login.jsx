@@ -1,14 +1,18 @@
+import { useContext } from 'react'
 import logo from '@/assets/react.svg'
 import { useNavigate } from 'react-router-dom'
-import { loginUser } from '@/services/userServices'
+import { loginUservice } from '@/services/userServices'
+import { AuthContext } from '@/context/authcontext'
 import '@/assets/css/form.css'
 import useForm from '../hooks/useform'
+import { loginUserService } from '../services/userServices'
 
 const Login = () => {
+  const { loginUser } = useContext(AuthContext)
   const navigate = useNavigate()
   const sendData = async (data) => {
     try {
-      const result = await loginUser(data)
+      const result = await loginUserService(data)
       if (result.status === 200) { //* * checar el codigo si es el correcto al hacer el login*//
         //* *console.log(result.data.token)**//
         window.localStorage.setItem('token', result.data.token)

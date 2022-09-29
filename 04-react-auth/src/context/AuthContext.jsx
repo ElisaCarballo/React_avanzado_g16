@@ -13,14 +13,34 @@ export funtion AuthProvider (props)
         
         const decoded = jwt_decode(token)
         setUser (decoded) 
-        setIsAuth (true)
+        setIsAuth (true) //Estoy autentificado
     }
 
     const logout = () => {
-
+        window.localStorage.removeItem('token')
+        setIsAuth (false) //Estoy fuera o deslogeado
+        setUser (null)
     }
-    
+
+    useEffect = () => {
+        const token = window.localStorage.getItem('token')
+        if (token)
+        const decoded = jwt_decode(token)
+        setUser (decoded) 
+        setIsAuth (true)
+    }
+}, [])
+
+    const values = {
+        isAuth,
+        user,
+        loginUser,
+        logout
+    }
+
     return (
-        <></>
+        <AuthContext.Provider value = {values}>
+            {props.children}
+            </AuthContext.Provider>
     )
 
