@@ -2,6 +2,7 @@ import logo from '@/assets/react.svg'
 import { useNavigate } from 'react-router-dom'
 import { loginUser } from '@/services/userServices'
 import '@/assets/css/form.css'
+import useForm from '../hooks/useform'
 
 const Login = () => {
   const navigate = useNavigate()
@@ -9,16 +10,22 @@ const Login = () => {
     try {
       const result = await loginUser(data)
       if (result.status === 200) { //* * checar el codigo si es el correcto al hacer el login*//
-        console.log(result.data.token)
+        //* *console.log(result.data.token)**//
+        window.localStorage.setItem('token', result.data.token)
         navigate('/login')
       }
     } catch (error) {
       console.log('Ocurrio un error en Login: ' + error.message)
     }
   }
+  const { input, handleInputChange, handleSubmit } = useForm(sendData, {
+    email: '',
+    password: ''
+  })
+
   return (
     <main className='form-signin w-100 m-auto'>
-      <form>
+      <form onSubmit={handleSubmit}>
         <img className='mb-4' src={logo} alt='' width='72' height='57' />
         <h1 className='h3 mb-3 fw-normal'>Please sign in</h1>
 
@@ -28,8 +35,8 @@ const Login = () => {
             className='form-control'
             id='floatingInput'
             name='email'
-            value=''
-            onChange={() => {}}
+            value={input.email}
+            onChange={handleInputChange}
             placeholder='name@example.com'
           />
           <label htmlFor='floatingInput'>Email address</label>
@@ -40,8 +47,8 @@ const Login = () => {
             className='form-control'
             id='floatingPassword'
             name='password'
-            value=''
-            onChange={() => {}}
+            value={input.password}
+            onChange={handleInputChange}
             placeholder='Password'
           />
           <label htmlFor='floatingPassword'>Password</label>
