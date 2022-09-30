@@ -6,6 +6,10 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.1",
+    "create-vite": "^3.1.0",
+    "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.1",
@@ -20,8 +24,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "./node_modules/standard/eslintrc.json"
     ]
   },
   "browserslist": {
@@ -38,10 +41,5 @@
   },
   "devDependencies": {
     "standard": "^17.0.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "./node_modules/standard/eslintrc.json"
-    ]
   }
 }
