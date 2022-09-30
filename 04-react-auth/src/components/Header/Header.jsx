@@ -13,9 +13,11 @@ const Header = () => {
         <li className='header__list-item'>
           <Link to='/' className='header__item-link header__item-link--is-active'>Home</Link>
         </li>
+
         <li className='header__list-item'>
-          <Link to='/' className='header__item-link header__item-link'>Dashboard</Link>
+          <Link to='/dashboard' className='header__item-link'>Dashboard</Link>
         </li>
+
         {
         !isAuth
           ? (

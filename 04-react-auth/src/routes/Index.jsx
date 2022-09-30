@@ -5,6 +5,7 @@ import { AuthContext } from '@/context/AuthContext'
 
 const RoutesIndex = () => {
   const { isAuth } = useContext(AuthContext)
+
   return (
     <Routes>
       <Route path='/' element={<Home />} />
