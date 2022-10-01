@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+Proyecto: e-Commerce con React
+Construye un e-commerce (sitio de comercio electrónico) con React a partir de consumir una API de un backend genérico proporcionado.
+Es necesario que el proyecto tengo un linter definido (se puede extender de alguno o definir tus propias reglas)
+El diseño es libre y esta vez SÍ se tomará en cuenta.
+ 
+API
+El resumen de los endpoints de la API con la qué deberás trabajar la puedes encontrar aquí:
+https://ecomerce-master.herokuapp.com/docs
+La documentación más completa la puedes consultar en:
+https://documenter.getpostman.com/view/807695/Tzm6jvYY
+ 
+REQUERIMIENTOS FUNCIONALES
+Se recomienda realizar el proyecto con una aproximación por fases, añadiendo nuevas características en cada iteración.
+ 
+ 
+ 
+ 
+ 
+MVP FASE 1: Ver y Consultar Productos
+En esta etapa nos centraremos en arrancar el proyecto y poder consumir la API, con el objetivo de mostrar la información más relevante de una tienda: Los productos y detalles de los mismos.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Características Generales:
+Mostrar productos
+Mostrar detalles de producto
+Buscar productos
 
-## Available Scripts
+Funcionalidades:
+Cuando entro al home puedo ver todos los productos.
+El componente NavBar debe estar a la vista en toda la app.
+Siempre hay una barra de búsqueda en la navbar para hacer búsquedas por productos.
+Si doy click a un producto, puedo ver su detalle completo en una URL / ruta única para este producto.
+Dentro del detalle individual de un producto, se muestra el botón “comprar”. En esta primera etapa no tendrá lógica de programación dicho botón, pero debe ser considerado para fines de diseño y más adelante hacerlo funcionar.
+ 
+Páginas/Vistas que recomendamos crear:
+Productos (Puede ser la Home)
+Producto Individual
+ 
+Skills: APIs, Axios, useState, useEffect, react-router, eventos.
+MVP FASE 2: Inicio de Sesión y Registro
+En esta etapa nos centraremos en poder consumir la API de inicio de sesión de usuario y realizar un formulario de registro. Así como realizar renderizado condicional en base a si estamos o no autenticados (es decir, la interfaz puede presentar ligeros cambios dependiendo el caso).
+Características Generales:
+Debe tener signup (registro)
+Debe tener login (inicio de sesión)
+Al iniciar sesión, debe distinguir entre usuario de tipo ADMIN y usuario de tipo CUSTOMER
+ 
+Funcionalidades CUSTOMER:
+Sin Usuario / Con Usuario (sin iniciar sesión / con sesión iniciada)
+Cuando entro al home puedo ver todos los productos
+Siempre hay una barra de búsqueda en la navbar para hacer búsquedas por productos.
+Si doy click a un producto, puedo ver su detalle completo en una URL / ruta única para este producto.
+ 
+Sin Usuario (sesión no iniciada):
+En la navbar, del lado derecho, me sugiere hacer signup o login.
+La vista de signup, y la vista de login, son urls diferentes ( /login /signup )
+Hay un botón comprar en la vista individual del detalle de cada producto, pero este está desactivado y debes mostrar (como desees) una invitación a registrarte o iniciar sesión.
+ 
+Con Usuario (sesión iniciada):
+En la navbar se muestra el rol de usuario
+Dentro del detalle individual de un producto, se muestra el botón “Comprar” habilitado.
+ 
+Páginas/Vistas que recomendamos crear:
+Login (Iniciar sesión)
+Signup (Registro)
+ 
+Skills: Autenticación con JWT, localStorage, Manejo de formularios y eventos
+ 
+ 
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MVP FASE 3: Crear productos como Administrador
+Dotaremos a la aplicación de la capacidad de distinguir a un usuario normal de un usuario administrador. El usuario administrador podrá crear nuevos productos.
+ 
+Funcionalidades ADMIN:
+Debe tener todas las funcionalidades del CUSTOMER.
+Puede dar de alta nuevos productos.
+Colocar un enlace en la Navbar qué le permita cargar productos.
+ 
+Páginas/Vistas que recomendamos crear:
+Alta de producto
+ 
+Skills: useContext, Autenticación con JWT, localStorage, manejo de formularios y eventos.
+ 
+Importante: La API maneja 2 roles de usuario “CUSTOMER” y “ADMIN”. Necesitaras logearte con una cuenta de ADMIN para qué puedas cargar el producto.
+ 
+Como tip, puedes crear con Postman/Insomnia un usuario y añadir la propiedad role al body con el contenido:
+"role": "ADMIN",
+ 
