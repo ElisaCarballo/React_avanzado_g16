@@ -6,6 +6,8 @@
     --primclaro:#FCF3CF;
     --grisclaro: #DFE9F3;
     --obscfuerte:#17202A;
+    --naranja:#E95833;
+    --moradologo: #9A43C2;
     --morado:#41436A;
     --azul:#212272;
     --grisaceo:#203864;
@@ -19,8 +21,9 @@
   }
 .item-container{
     background-color: var(--grisclaro);
-    width: 250px;
-    height: calc(100% + 20px);
+    width: 200px;
+    height: 200px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,17 +42,20 @@
 }
 
 .img-item{
-    width: 230px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     position: relative;
+    justify-items: center;
     color: none;
     border-radius: 10px;
 }
 
 .item-container img{
-    width: 230px;
-    height: 200px;
+    width: 170px;
+    height: 150px;
     object-fit: cover;
+    position:absolute;
+    justify-items: center;
     border-radius: 10px;
     -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.4);
 	-moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.4);
@@ -58,12 +64,23 @@
 
 .info-item{
     text-align: center;
-    font-weight: 700;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: lowercase;
+    position: relative;
+    font-weight: 10px;
+    font-family: var(--otrafuente);
+    font-stretch: semi-condensed;
+    line-height: 18px;
+    color: var(--naranja);
+}
+.info-item p:first-letter {
+    text-transform: uppercase;
 }
 
 .price{
-    color: var(--grisaceo);
+    color: var(--moradologo);
+    font-weight: 10px;
+    font-family: var(--otrafuente);
+    font-weight: bold;
 }
 
 .hover-container{
@@ -91,15 +108,18 @@
 }
 
 .title-hover{
-    font-weight: 700;
+    font-weight: 7px;
+    position: relative;
+    line-height: 10px;
     font-weight: bold;
+    color: var(--semiobscuro);
     text-shadow:.10px .10px .10px var(--secundario) ;
 }
 
 
 .item-button{
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 16px;
     font-size: 20px;
     color: #333333;
     padding-top: 5px;

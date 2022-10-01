@@ -37,13 +37,13 @@ const Grid = ({search}) => {
       // Definimos que solo se vean los 10 más nuevos y reseteamos los demás valores
       setPage(0);
       setItems(sort_date);
-      setItemsxPagina(12);
+      setItemsxPagina(21);
     }
     else{
       // Reseteamos los demás valores para que se vean todos
       setPage(0);
       setItems(shuffle(dataItem));
-      setItemsxPagina(12);
+      setItemsxPagina(21);
     }
   }, [option]);
 
