@@ -33,7 +33,7 @@ ul{
 }
 
 .pagination a {
-    color: black;
+    color: var(--blanco);
     background-color: #fff;
     float: left;
     padding: 12px 20px;
