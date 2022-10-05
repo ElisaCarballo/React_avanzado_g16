@@ -41,11 +41,6 @@ a{
   text-shadow: var(--grisaceo);
 }
 
-.favicon{
-  width: auto;
-  height: auto;
-}
-
 /* Estilos para el Nav */
 .nav{
   background-color: var(--secundario);
