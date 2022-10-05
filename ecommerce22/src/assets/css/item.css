@@ -18,7 +18,7 @@
     --Fuentetype: 'Acme', sans-serif;
     --Fuentesec: 'Shadows Into Light', cursive;
     --otrafuente: 'Poppins';
-  }
+}
 .item-container{
     background-color: var(--grisclaro);
     width: 200px;

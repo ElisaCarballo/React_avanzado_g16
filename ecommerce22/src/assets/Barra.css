@@ -1,3 +1,25 @@
+:root{
+    --blanco:#ffffff;
+    --oscuro: #525558;
+    --primario: #F4D03F;
+    --secundario: #16141b;
+    --primclaro:#FCF3CF;
+    --grisclaro: #DFE9F3;
+    --obscfuerte:#17202A;
+    --naranja:#E95833;
+    --moradologo: #9A43C2;
+    --morado:#41436A;
+    --azul:#212272;
+    --grisaceo:#203864;
+    --grismedio:#9A9FC6;
+    --semiobscuro:#16141B;
+    --fuentePrincipal:'krub', cursive;
+    --fuentenumber: 'Fascinate Inline', cursive;
+    --Fuentetype: 'Acme', sans-serif;
+    --Fuentesec: 'Shadows Into Light', cursive;
+    --otrafuente: 'Poppins';
+}
+
 .social-bar{
     position: fixed;
     right: 0;
@@ -18,23 +40,23 @@
 }
 
 .icon-facebook{
-    background: #304ffe;
+    background: var(--secundario);
 }
 
 .icon-instagram{
-    background: #e91e63;
+    background: var(--secundario);
 }
 
 .icon-github{
-    background: #311b92;
+    background: var(--secundario);
 }
 
 .icon-linkedin{
-    background: #2962ff;
+    background: var(--secundario);
 }
 
 .icon-medium{
-    background: #00c853;
+    background: var(--secundario);
 }
 
 .icon:first-child{

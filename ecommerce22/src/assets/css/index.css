@@ -21,6 +21,7 @@
   --Fuentetype: 'Acme', sans-serif;
   --Fuentesec: 'Shadows Into Light', cursive;
   --otrafuente: 'Poppins';
+  --nuevofondo: #011024;
 }
 
 @font-face{
@@ -31,7 +32,7 @@ body{
   font-family: var(--Fuentetype);
   color: var(--morado);
   background-color: var(--semiobscuro);
-  background-image: linear-gradient(to top, var(--grismedio) 0%, var(--secundario) 100%); /* Asi se usa el degradado  **/
+  background-image: linear-gradient(to top, var(--nuevofondo) 20%, var(--secundario) 100%); /* Asi se usa el degradado  **/
 }
 
 a{
