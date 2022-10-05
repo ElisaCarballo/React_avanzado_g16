@@ -42,7 +42,7 @@ const SignIn = () => {
                     <h2 className='form-title2' >Bienvenido</h2>
                     <h4 className='form-title3' >Iniciar Sesión</h4>
 
-                    <div className='form-goup'>
+                    <div className='form-group'>
                         <input type="text" placeholder='Correo' className='form-input' {...register('email', {
                             required: true,
                             pattern: /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
@@ -51,7 +51,7 @@ const SignIn = () => {
                         {errors.email?.type === 'pattern' && <p className='form-error'>* Formato incorrecto</p>}
                     </div>
 
-                    <div className='form-goup'>
+                    <div className='form-group'>
                         <label ></label>
                         <input type="password" placeholder='Contraseña' className='form-input' {...register('password', {
                             required: true,

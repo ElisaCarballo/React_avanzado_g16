@@ -1,3 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root{
+    --blanco:#ffffff;
+    --oscuro: #525558;
+    --primario: #F4D03F;
+    --secundario: #16141b;
+    --primclaro:#FCF3CF;
+    --grisclaro: #DFE9F3;
+    --obscfuerte:#17202A;
+    --morado:#41436A;
+    --azul:#212272;
+    --grisaceo:#203864;
+    --grismedio:#9A9FC6;
+    --semiobscuro:#16141B;
+    --fuentePrincipal:'krub', cursive;
+    --fuentenumber: 'Fascinate Inline', cursive;
+    --Fuentetype: 'Acme', sans-serif;
+    --Fuentesec: 'Shadows Into Light', cursive;
+    --otrafuente: 'Poppins';
+    --nuevofondo: #011024;
+    --nuevoazul: #5DCBDB;
+    --nuevoamarillo: #F6B933;
+    --nuevogris: #E2DACF;
+    --nvogrisobs: #9B9892;
+    --nuevoopasi: #011024;
+  }
+
 .body {
     margin: 0;
     padding: 0;
@@ -7,7 +38,6 @@
     height: 100vh;
     width: 50%;
     display: flex;
-
 
 }
 
@@ -26,28 +56,30 @@
 }
 
 
-
 .span-signing {
     color: rgb(185, 197, 204);
 }
 
 
 .right-signin-section h1 {
-    font-size: 30px;
+    font-size: 14px;
+    font-family: var(--Fuentetype);
     width: 50%;
     margin: auto;
     margin-left: 80px;
 }
 
 .right-signin-section p {
-    font-size: 20px;
+    font-size: 14px;
+    font-family: var(--Fuentetype);
     line-height: 30px;
     width: 50%;
     margin: auto;
 }
 
 .right-signin-section h3 {
-    font-size: 20px;
+    font-size: 14px;
+    font-family: var(--Fuentetype);
     line-height: 30px;
     width: 50%;
     margin: auto;
@@ -56,12 +88,13 @@
 
 /*puede ser para un boton */
 .link-signin a {
-    border: 2px solid white;
+    border: 2px solid var(--nuevogris);
+    font-family: var(--Fuentetype);
     padding: 20px;
     text-decoration: none;
     color: aqua;
     border-radius: 30px;
-    font-weight: bold;
+    font-weight: 16px;
     display: inline-block;
     margin-top: 30px;
 }
@@ -71,11 +104,12 @@
 }
 
 .form-signin {
-    background-color: #FFF;
+    background-color: var(--nuevogris);
+    font-family: var(--Fuentetype);
     margin: auto;
-    width: 90%;
+    width: 95%;
     max-width: 400px;
-    padding: 4.em 3em;
+    padding: 4rem 3em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 /30%);
     text-align: center;
@@ -83,22 +117,26 @@
 }
 
 .form-title1 {
+    font-family: var(--Fuentetype);
     margin-top: 1rem !important;
-    font-weight: 300;
+    font-weight: 18px;
     margin-bottom: 5px !important;
 }
 
 .form-title2 {
-    font-size: 2rem;
-    margin-bottom: .5em;
+    font-family: var(--Fuentetype);
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
 }
 
 .form-title3 {
+    font-family: var(--Fuentetype);
     font-size: 1rem;
-    margin-bottom: .5em;
+    margin-bottom: .5rem;
 }
 
 .form-error {
+    font-family: var(--Fuentetype);
     font-size: xx-small;
     margin-top: 10px;
     background: rgb(235, 187, 187);
@@ -109,10 +147,11 @@
 }
 
 .form-button {
+    font-family: var(--Fuentetype);
     border: none;
     padding: 0 10px;
     margin: 10px;
-    width: 20%;
+    width: 30%;
     background: none;
     border: 1px solid black;
     border-radius: 30px;
@@ -121,7 +160,8 @@
 }
 
 .form-text {
-    font-weight: 300;
+    font-family: var(--Fuentetype);
+    font-weight: 14px;
 }
 
 .form-link {
@@ -146,18 +186,19 @@
 }
 
 * .form-submit {
+    font-family: var(--Fuentetype);
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
-    width: 200px;
+    width: 120px;
     height: 45px;
-    background: #3866F2;
-    color: #FFF;
-    font-weight: 300;
+    background: var(--nuevofondo);
+    color: var(--blanco);
+    font-weight: 14px;
     font-size: 1rem;
     padding: .8rem 0;
     border: none;
-    border-radius: .5em;
+    border-radius: .5rem;
 }
 
 .form-line {
@@ -170,23 +211,25 @@
 }
 
 .form-button-register {
+    font-family: var(--Fuentetype);
     text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    color: #333333;
+    font-weight: 14px;
+    font-size: 14px;
+    color: var(--blanco);
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: #b9dde9;
-    border-color: #D8D8D8;
-    border-width: 3PX;
+    background-color: var(--nvogrisobs);
+    border-color: var(--nuevofondo);
+    border-width: 2px;
     border-style: solid;
     border-radius: 35px;
     margin: 10px;
 }
 
 .form-error{
+    font-family: var(--Fuentetype);
     margin-top: 20px !important;
 }
 
@@ -200,6 +243,7 @@
     right: 2rem;
     top: 1rem;
     cursor: pointer;
+    color: var(--nuevofondo);
 }
 
 .form-radio{
