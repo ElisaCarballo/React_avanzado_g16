@@ -6,11 +6,13 @@ import  {
   Route,
   Navigate
 } from "react-router-dom";
-import './index.css'
-import SignIn from './components/SignIn'
-import SignUp from './components/SignUp'
+import '../src/assets/css/index.css'
+import SignIn from './pages/SignIn'
+import SignUp from './pages/SignUp'
 import App from './App'
-import Products from './components/Products'
+import Products from './pages/Products'
+// import BannerMain from './assets/imgs/BannerMain.jpg'
+// import './assets/img.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -27,4 +29,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </BrowserRouter>    
   </React.StrictMode>
 )
+// return (
+//   <div>
+//   <img src={BannerMain} className="ImgHeader"/>
+//     </div>
+// )
 

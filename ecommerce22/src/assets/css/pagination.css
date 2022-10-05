@@ -1,0 +1,56 @@
+:root{
+    --blanco:#ffffff;
+    --oscuro: #525558;
+    --primario: #F4D03F;
+    --secundario: #16141b;
+    --primclaro:#FCF3CF;
+    --grisclaro: #DFE9F3;
+    --obscfuerte:#17202A;
+    --morado:#41436A;
+    --azul:#212272;
+    --grisaceo:#203864;
+    --grismedio:#9A9FC6;
+    --semiobscuro:#16141B;
+    --fuentePrincipal:'krub', cursive;
+    --fuentenumber: 'Fascinate Inline', cursive;
+    --Fuentetype: 'Acme', sans-serif;
+    --Fuentesec: 'Shadows Into Light', cursive;
+    --otrafuente: 'Poppins';
+  }
+
+.pagination{
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.pagination a {
+    color: black;
+    background-color: #fff;
+    float: left;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 0 4px 15px;
+}
+
+.active a {
+    background-color: var(--azul);
+    color: white;
+    border: 1px solid var(--morado);
+}
+
+.page-item:hover:not(.active) a{
+    background-color: #000;
+    color: #fff;
+}
