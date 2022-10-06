@@ -1,3 +1,8 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     --blanco:#ffffff;
     --oscuro: #525558;
@@ -23,11 +28,6 @@
     --nvogrisobs: #9B9892;
     --nuevoopasi: #011024;
     --chocolate: #573826;
-}
-
-.body {
-    margin: 0;
-    padding: 0;
 }
 
 .right-signin-section {
