@@ -1,7 +1,6 @@
 import React from 'react'
 import { usePromiseTracker } from "react-promise-tracker";
 import { ThreeDots } from 'react-loader-spinner';
-import "../assets/css/Variables.scss";
 
 const LoadingIndicator = () => {
     const { promiseInProgress } = usePromiseTracker();
