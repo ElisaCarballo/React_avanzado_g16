@@ -88,9 +88,9 @@ const Grid = ({search}) => {
           }
         </div>
         <div className="options-container">
-          <button className={`all ${option == "all" ? "selected" : ""}`} onClick={() => handleOption("all")}></button>
+          <button className={`all ${option == "all" ? "selected" : ""}`} onClick={() => handleOption("all")}> Todos </button>
           <br />
-          <button className={`news ${option == "news" ? "selected" : ""}`} onClick={() => handleOption("news")}></button>
+          <button className={`news ${option == "news" ? "selected" : ""}`} onClick={() => handleOption("news")}>Nuevos</button>
         </div>
        
         

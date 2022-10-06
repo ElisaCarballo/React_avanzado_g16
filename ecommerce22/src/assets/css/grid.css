@@ -27,6 +27,7 @@
     --nuevogris: #E2DACF;
     --nvogrisobs: #9B9892;
     --nuevoopasi: #011024;
+    --chocolate: #573826;
 }
 
 .body-grid{
@@ -52,15 +53,19 @@
     margin: auto;
 }
 
-.all{
+.all {
+    background-color: var(--nuevogris);
     margin-left: 1rem;
     color: var(--blanco);
-    font-size: 14px;
+    font-size: 18px;
+    width: 80px;
+    height: 35px;
 }
 
 .all:hover{
     text-shadow:0.5px .5px .5px #ffffff;
 }
+
 .options-container{
     margin-bottom: 2rem;
     margin-top: 50px;
@@ -71,9 +76,10 @@
     cursor: pointer;
 	outline: inherit;
 	padding: 0;
-    font-weight: 14px;
+    font-weight: 18px;
     margin-bottom: 10px;
-    color: var(--secundario);
+    color: var(--blanco);
+    font-family: var(--otrafuente);
 }
 
 .options-container button:hover{

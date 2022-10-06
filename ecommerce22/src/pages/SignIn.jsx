@@ -71,7 +71,7 @@ const SignIn = () => {
                         </a>
                     </p>
                     <Link to={'/signup'}>
-                        <button className='form-button-register'>REGISTRARME</button>
+                        <button className='form-button-register'>Registrarme</button>
                     </Link>
                 </form>
 

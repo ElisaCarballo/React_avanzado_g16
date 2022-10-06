@@ -22,10 +22,12 @@
     --nuevogris: #E2DACF;
     --nvogrisobs: #9B9892;
     --nuevoopasi: #011024;
+    --chocolate: #573826;
 }
+
 .product{
     margin: auto;
-    margin-top: 90px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     width: 80vw;
@@ -34,10 +36,7 @@
 }
 
 .product:hover{
-    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.4);
-    background-color: #2C2836;
     height: 55%;
-    color: #ffffff;
 }
 
 
@@ -50,27 +49,27 @@
 
 .img-product img{
     border-radius: 20px;
-    width: 100%;
     height: auto;
 }
 
 .img-product:hover{
-    width: 50%;
+    width: 45%;
 }
 
 .product-info{
     background-color: none;
-    font-family: 'Kufam';
-    font-size: 1.5rem;
-    padding: 50px;
-    width: 30%;
+    color: var(--blanco);
+    font-family: var(--otrafuente);
+    font-size: 14px;
+    padding: 100px;
+    width: 40%;
     height: 20%;
     border-radius: 20px;
 }
 
 .product-info:hover{
     text-shadow:0 .5px .5px rgb #0000;
-    font-family: cursive;
+    font-size: 18px;
 }
 
 .product-desc{
@@ -83,35 +82,38 @@
 }
 
 .product-name{
-    font-size: 2rem;
+    font-size: 18px;
+    font-family: var(--otrafuente);
+    font-weight: bold;
 }
 
 .product-price{
-    color: #3354FF;
-    font-weight: 700;
-    font-size: 2rem;
+    color: var(--nuevoamarillo);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: var(--otrafuente);
 }
 
 .bold{
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .product-button {
-	background-color:#44c767;
+	background-color:var(--nuevogris);
 	border-radius:28px;
-	border:1px solid #18ab29;
+	border:1px solid var(--nuevoamarillo);
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:2rem;
-	padding:16px 31px;
+	color: var(--nuevofondo);
+	font-family: var(--otrafuente);
+	font-size:18px;
+	padding:10px 20px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
     margin-top: 2rem;
 }
+
 .product-button:hover {
-	background-color:#5cbf2a;
+	background-color: var(--nuevoazul);
 }
 
 
@@ -133,6 +135,7 @@
 
     .product-info{
         width: calc(100% - 30px);
-        padding: 15px;
+        padding: 10px;
+        font-family: var(--otrafuente);
     }
   }

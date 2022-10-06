@@ -22,7 +22,9 @@
     --nuevogris: #E2DACF;
     --nvogrisobs: #9B9892;
     --nuevoopasi: #011024;
+    --chocolate: #573826;
 }
+
 .pagination{
     margin-top: 50px;
     width: 100%;
@@ -50,9 +52,9 @@ ul{
 }
 
 .active a {
-    background-color: var(--azul);
+    background-color: var(--nuevoazul);
     color: white;
-    border: 1px solid var(--morado);
+    border: 1px solid var(--nuevoamarillo);
 }
 
 .page-item:hover:not(.active) a{

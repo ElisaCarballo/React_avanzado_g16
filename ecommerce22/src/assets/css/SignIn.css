@@ -22,6 +22,7 @@
     --nuevogris: #E2DACF;
     --nvogrisobs: #9B9892;
     --nuevoopasi: #011024;
+    --chocolate: #573826;
 }
 
 .body {
@@ -33,7 +34,6 @@
     height: 100vh;
     width: 50%;
     display: flex;
-
 }
 
 .left-signin-section {
@@ -50,15 +50,13 @@
     display: flex;
 }
 
-
 .span-signing {
     color: rgb(185, 197, 204);
 }
 
-
 .right-signin-section h1 {
     font-size: 14px;
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
     width: 50%;
     margin: auto;
     margin-left: 80px;
@@ -66,7 +64,7 @@
 
 .right-signin-section p {
     font-size: 14px;
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
     line-height: 30px;
     width: 50%;
     margin: auto;
@@ -74,7 +72,7 @@
 
 .right-signin-section h3 {
     font-size: 14px;
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
     line-height: 30px;
     width: 50%;
     margin: auto;
@@ -84,7 +82,7 @@
 /*puede ser para un boton */
 .link-signin a {
     border: 2px solid var(--nuevogris);
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
     padding: 20px;
     text-decoration: none;
     color: aqua;
@@ -100,7 +98,7 @@
 
 .form-signin {
     background-color: var(--nuevogris);
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
     margin: auto;
     width: 95%;
     max-width: 400px;
@@ -112,26 +110,26 @@
 }
 
 .form-title1 {
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
     margin-top: 1rem !important;
-    font-weight: 18px;
-    margin-bottom: 5px !important;
+    font-weight: 20px;
+    margin-bottom: .5px !important;
 }
 
 .form-title2 {
-    font-family: var(--Fuentetype);
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
+    font-family: var(--otrafuente);
+    font-size: 18px;
+    margin-bottom: .5em;
 }
 
 .form-title3 {
-    font-family: var(--Fuentetype);
-    font-size: 1rem;
-    margin-bottom: .5rem;
+    font-family: var(--otrafuente);
+    font-size: 16px;
+    margin-bottom: .5em;
 }
 
 .form-error {
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
     font-size: xx-small;
     margin-top: 10px;
     background: rgb(235, 187, 187);
@@ -142,7 +140,7 @@
 }
 
 .form-button {
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
     border: none;
     padding: 0 10px;
     margin: 10px;
@@ -155,12 +153,13 @@
 }
 
 .form-text {
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
     font-weight: 14px;
 }
 
 .form-link {
-    font-weight: 400;
+    font-family: var(--otrafuente);
+    font-weight: 16px;
     color: black;
 }
 
@@ -175,13 +174,14 @@
     outline: 1px solid rgb(177, 174, 174) !important;
     border-radius: 10px;
     width: 50%;
-    font-size: 1rem;
+    font-size: 16px;
+    font-family: var(--otrafuente);
     padding: 10px !important;
 
 }
 
 * .form-submit {
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
@@ -206,7 +206,7 @@
 }
 
 .form-button-register {
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
     text-decoration: none;
     font-weight: 14px;
     font-size: 14px;
@@ -224,7 +224,8 @@
 }
 
 .form-error{
-    font-family: var(--Fuentetype);
+    font-family: var(--otrafuente);
+    font-size: 16px;
     margin-top: 20px !important;
 }
 
@@ -233,7 +234,16 @@
 }
 
 .fa-solid{
-    font-size: 2rem;
+    font-size: 16px;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    cursor: pointer;
+    color: var(--nuevofondo);
+}
+
+.fa-house{
+    font-size: 16px;
     position: absolute;
     right: 2rem;
     top: 1rem;
@@ -244,6 +254,7 @@
 .form-radio{
     margin-top: 20px;
     margin-left: 10px;
+    color:var(--nuevofondo)
 }
 
 @media only screen and (max-width: 800px) {
@@ -257,7 +268,7 @@
         height: auto;
         margin-bottom: 2rem;
         margin-top: 2rem;
-        
+        color: var(--nuevofondo);
     }
     .left-signin-section{
         width: 100%;

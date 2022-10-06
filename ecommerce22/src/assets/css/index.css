@@ -27,10 +27,7 @@
   --nuevogris: #E2DACF;
   --nvogrisobs: #9B9892;
   --nuevoopasi: #011024;
-}
-
-@font-face{
-  font-family: var(--otrafuente)
+  --chocolate: #573826;
 }
 
 body{
