@@ -51,7 +51,7 @@
 }
 
 .span-signing {
-    color: rgb(185, 197, 204);
+    color: rgb(1, 2, 3);
 }
 
 .right-signin-section h1 {
@@ -112,7 +112,8 @@
 .form-title1 {
     font-family: var(--otrafuente);
     margin-top: 1rem !important;
-    font-weight: 20px;
+    font-size: 20px;
+    font-weight: bold;
     margin-bottom: .5px !important;
 }
 
@@ -268,7 +269,6 @@
         height: auto;
         margin-bottom: 2rem;
         margin-top: 2rem;
-        color: var(--nuevofondo);
     }
     .left-signin-section{
         width: 100%;

@@ -49,21 +49,21 @@ const SignUp = () => {
                     <h2 className='form-title2' >Bienvenido</h2>
                     <h4 className='form-title3' >Registrarse</h4>
 
-                    <div className='form-goup'>
+                    <div className='form-group'>
                         <input type="text" placeholder='Nombre' className='form-input' {...register('nombre', {
                             required: true,
                         })} />
                         {errors.nombre?.type === 'required' && <p className='form-error'>* Campo requerido</p>}
                     </div>
 
-                    <div className='form-goup'>
+                    <div className='form-group'>
                         <input type="text" placeholder='Apellidos' className='form-input' {...register('apellidos', {
                             required: true,
                         })} />
                         {errors.apellidos?.type === 'required' && <p className='form-error'>* Campo requerido</p>}
                     </div>
 
-                    <div className='form-goup'>
+                    <div className='form-group'>
                         <div className='lbl'>Fecha de Nacimiento</div>
                         <input type="date" placeholder='Fecha Nacimiento' className='form-input' {...register('nacimiento', {
                             required: true,
@@ -71,7 +71,7 @@ const SignUp = () => {
                         {errors.nacimiento?.type === 'required' && <p className='form-error'>* Campo requerido</p>}
                     </div>
 
-                    <div className='form-goup'>
+                    <div className='form-group'>
                     <div className='lbl'>Género</div>
                         <input type="radio" name='genero' value={"M"} placeholder='Género' className='form-radio' {...register('genero', {
                             required: true,
@@ -85,7 +85,7 @@ const SignUp = () => {
                         {errors.genero?.type === 'required' && <p className='form-error'>* Campo requerido</p>}
                     </div>
 
-                    <div className='form-goup'>
+                    <div className='form-group'>
                         <input type="text" placeholder='Correo' className='form-input' {...register('email', {
                             required: true,
                             pattern: /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
@@ -94,7 +94,7 @@ const SignUp = () => {
                         {errors.email?.type === 'pattern' && <p className='form-error'>* Formato incorrecto</p>}
                     </div>
 
-                    <div className='form-goup'>
+                    <div className='form-group'>
                         <input type="password" placeholder='Contraseña' className='form-input' {...register('password', {
                             required: true,
                             minLength: 5
