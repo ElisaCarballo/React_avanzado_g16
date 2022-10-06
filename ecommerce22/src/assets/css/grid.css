@@ -49,16 +49,25 @@
 }
 
 .all {
+    font-family: var(--otrafuente);
     background-color: var(--nuevogris);
+    border: 1px solid var(--nuevoamarillo);
     margin-left: 1rem;
-    color: var(--blanco);
+    color: var(--secundario);
     font-size: 18px;
     width: 80px;
     height: 35px;
 }
 
-.all:hover{
-    text-shadow:0.5px .5px .5px #ffffff;
+.news {
+    font-family: var(--otrafuente);
+    background-color: var(--nuevogris);
+    border: 1px solid var(--nuevoamarillo);
+    margin-left: 1rem;
+    color: var(--secundario);
+    font-size: 18px;
+    width: 80px;
+    height: 35px;
 }
 
 .options-container{
@@ -71,10 +80,9 @@
     cursor: pointer;
 	outline: inherit;
 	padding: 0;
-    font-weight: 18px;
+    font-weight: 1.8rem;
     margin-bottom: 10px;
-    color: var(--blanco);
-    font-family: var(--otrafuente);
+    color: var(--secundario);
 }
 
 .options-container button:hover{

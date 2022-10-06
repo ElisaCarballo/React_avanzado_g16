@@ -1,8 +1,3 @@
-.body {
-    margin: 0;
-    padding: 0;
-}
-
 :root{
     --blanco:#ffffff;
     --oscuro: #525558;
@@ -28,6 +23,11 @@
     --nvogrisobs: #9B9892;
     --nuevoopasi: #011024;
     --chocolate: #573826;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
 }
 
 .right-signin-section {
@@ -111,10 +111,10 @@
 
 .form-title1 {
     font-family: var(--otrafuente);
-    margin-top: 1rem !important;
-    font-size: 20px;
+    margin-top: 10px !important;
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: .5px !important;
+    margin-bottom: 5px !important;
 }
 
 .form-title2 {
@@ -159,7 +159,6 @@
 }
 
 .form-link {
-    font-family: var(--otrafuente);
     font-weight: 16px;
     color: black;
 }
@@ -211,7 +210,7 @@
     text-decoration: none;
     font-weight: 14px;
     font-size: 14px;
-    color: var(--blanco);
+    color: var(--secundario);
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 40px;
@@ -235,19 +234,9 @@
 }
 
 .fa-solid{
-    font-size: 16px;
+    font-size: 2rem;
     position: absolute;
     right: 2rem;
-    top: 1rem;
-    cursor: pointer;
-    color: var(--nuevofondo);
-}
-
-.fa-house{
-    font-size: 16px;
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
     cursor: pointer;
     color: var(--nuevofondo);
 }

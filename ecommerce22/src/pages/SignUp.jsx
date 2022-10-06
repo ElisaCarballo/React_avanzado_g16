@@ -45,8 +45,8 @@ const SignUp = () => {
                     <Link to={ `/signin` }>
                         <i className="fa-solid fa-arrow-left-long"></i>
                     </Link>
-                    <h3 className='form-title1' >¡Hola!</h3>
-                    <h2 className='form-title2' >Bienvenido</h2>
+                    <h2 className='form-title1' >¡Hola!</h2>
+                    <h3 className='form-title2' >Bienvenido</h3>
                     <h4 className='form-title3' >Registrarse</h4>
 
                     <div className='form-group'>
@@ -103,12 +103,10 @@ const SignUp = () => {
                         {errors.password?.type === 'minLength' && <p className='form-error' >* Ingrese más de 5 caracteres</p>}
                     </div>
 
-                    <input type="submit" value="REGISTRARSE" className='form-submit' />
+                    <input type="submit" value="Registrarse" className='form-submit' />
 
 
                 </form>
-
-                       
 
             </div>
             

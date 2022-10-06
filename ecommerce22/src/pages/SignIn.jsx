@@ -39,8 +39,8 @@ const SignIn = () => {
                     <Link to={`/home`}>
                         <i className="fa-solid fa-house"></i>
                     </Link>
-                    <h3 className='form-title1' >¡Hola!</h3>
-                    <h2 className='form-title2' >Bienvenido</h2>
+                    <h2 className='form-title1' >Hola</h2>
+                    <h3 className='form-title2' >Bienvenido</h3>
                     <h4 className='form-title3' >Iniciar Sesión</h4>
 
                     <div className='form-group'>
@@ -63,7 +63,7 @@ const SignIn = () => {
                     </div>
 
 
-                    <input type="submit" value="ENTRAR" className='form-submit' />
+                    <input type="submit" value="Entrar" className='form-submit' />
                     <p className='form-text' >
                         <br />
                         <a href="/signup" className='form-link'>¿No tienes una cuenta?
