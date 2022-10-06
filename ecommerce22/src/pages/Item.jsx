@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import '../../src/assets/css/item.css'
+import "../assets/css/Variables.scss";
 
 const Item = ({ data }) => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import OptionsNavbar from './OptionsNavbar'
-
+import "../assets/css/Variables.scss";
 
 const Navbar = ({handleInput,search}) => {
     const [navbarOpen, setNavbarOpen] = useState(false);

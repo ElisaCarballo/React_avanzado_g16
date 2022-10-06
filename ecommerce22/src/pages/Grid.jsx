@@ -4,6 +4,7 @@ import Item from './Item'
 import Pagination from './Pagination'
 import { trackPromise } from 'react-promise-tracker';
 import "../../src/assets/css/grid.css";
+import "../assets/css/Variables.scss";
 import LoadingIndicator from './LoadingIndicator';
 
 const Grid = ({search}) => {

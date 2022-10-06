@@ -6,8 +6,6 @@
     --primclaro:#FCF3CF;
     --grisclaro: #DFE9F3;
     --obscfuerte:#17202A;
-    --naranja:#E95833;
-    --moradologo: #9A43C2;
     --morado:#41436A;
     --azul:#212272;
     --grisaceo:#203864;
@@ -18,6 +16,12 @@
     --Fuentetype: 'Acme', sans-serif;
     --Fuentesec: 'Shadows Into Light', cursive;
     --otrafuente: 'Poppins';
+    --nuevofondo: #011024;
+    --nuevoazul: #5DCBDB;
+    --nuevoamarillo: #F6B933;
+    --nuevogris: #E2DACF;
+    --nvogrisobs: #9B9892;
+    --nuevoopasi: #011024;
 }
 .item-container{
     background-color: var(--grisclaro);

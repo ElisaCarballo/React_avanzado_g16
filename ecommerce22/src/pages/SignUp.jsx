@@ -1,8 +1,8 @@
-import axios from 'axios';
+import axios from 'axios'
 import React from 'react'
 import { useForm } from "react-hook-form"
-import { Link } from 'react-router-dom';
-import "../../src/assets/css/SignIn.css"
+import { Link } from 'react-router-dom'
+import '../../src/assets/css/SignIn.css'
 
 const SignUp = () => {
 

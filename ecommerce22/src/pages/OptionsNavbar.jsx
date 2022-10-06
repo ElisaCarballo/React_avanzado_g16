@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import "../assets/css/Variables.scss";
 
 const OptionsNavbar = () => {
   return (

@@ -16,8 +16,13 @@
     --Fuentetype: 'Acme', sans-serif;
     --Fuentesec: 'Shadows Into Light', cursive;
     --otrafuente: 'Poppins';
-  }
-
+    --nuevofondo: #011024;
+    --nuevoazul: #5DCBDB;
+    --nuevoamarillo: #F6B933;
+    --nuevogris: #E2DACF;
+    --nvogrisobs: #9B9892;
+    --nuevoopasi: #011024;
+}
 .pagination{
     margin-top: 50px;
     width: 100%;

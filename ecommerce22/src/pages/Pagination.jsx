@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate';
 import '../../src/assets/css/pagination.css'
 
+
 const Pagination = ({ changePage, items, itemsPerPage}) => {
   const [pageCount, setPageCount] = useState(0); //Variable para señalar en que numero de pagina vamos
   const [itemOffset, setItemOffset] = useState(0); //Es el item que inicia el offset

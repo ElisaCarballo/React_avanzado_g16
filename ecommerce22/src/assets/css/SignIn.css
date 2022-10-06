@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-  }
-  
-  :root{
+:root{
     --blanco:#ffffff;
     --oscuro: #525558;
     --primario: #F4D03F;
@@ -27,7 +22,7 @@
     --nuevogris: #E2DACF;
     --nvogrisobs: #9B9892;
     --nuevoopasi: #011024;
-  }
+}
 
 .body {
     margin: 0;
