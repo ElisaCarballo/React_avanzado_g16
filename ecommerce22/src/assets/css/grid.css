@@ -54,11 +54,12 @@
 
 .all{
     margin-left: 1rem;
-    color: var(--grisclaro);
+    color: var(--blanco);
+    font-size: 14px;
 }
 
 .all:hover{
-    text-shadow:0.5px .5px .5px #000;
+    text-shadow:0.5px .5px .5px #ffffff;
 }
 .options-container{
     margin-bottom: 2rem;

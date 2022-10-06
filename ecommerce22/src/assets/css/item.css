@@ -22,9 +22,10 @@
     --nuevogris: #E2DACF;
     --nvogrisobs: #9B9892;
     --nuevoopasi: #011024;
+    --chocolate: #573826;
 }
 .item-container{
-    background-color: var(--grisclaro);
+    background-color: var(--nuevogris);
     width: 200px;
     height: 200px;
     padding: 5px;
@@ -33,12 +34,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    box-shadow: #000 5px 10px 15px;
+    box-shadow: #010101 5px 10px 15px;
     transition: transform .3s ease-in-out;
     position: relative;
     z-index: 3;
     font-family: var(--otrafuente);
-    color: var(--grisaceo);
 }
 
 .item-container:hover{
@@ -61,9 +61,9 @@
     position:absolute;
     justify-items: center;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.4);
-	-moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.4);
-	box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.4);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(69, 68, 68, 0.4);
+	-moz-box-shadow: 0px 5px 15px 0px rgba(51, 50, 50, 0.4);
+	box-shadow: 0px 5px 15px 0px rgba(37, 37, 37, 0.4);
 }
 
 .info-item{
@@ -72,16 +72,16 @@
     position: relative;
     font-weight: 10px;
     font-family: var(--otrafuente);
-    font-stretch: semi-condensed;
+    font-weight: lighter;
     line-height: 18px;
-    color: var(--naranja);
+    color: var(--chocolate);
 }
 .info-item p:first-letter {
     text-transform: uppercase;
 }
 
 .price{
-    color: var(--moradologo);
+    color: var(--nuevofondo);
     font-weight: 10px;
     font-family: var(--otrafuente);
     font-weight: bold;
@@ -89,7 +89,7 @@
 
 .hover-container{
     background-image: linear-gradient(rgba(69, 65, 65, 0.637), rgba(37, 35, 35, 0.637));
-    width: 100%;
+    width: 106%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -116,8 +116,7 @@
     position: relative;
     line-height: 10px;
     font-weight: bold;
-    color: var(--semiobscuro);
-    text-shadow:.10px .10px .10px var(--secundario) ;
+    color: var(--nuevoamarillo);
 }
 
 
